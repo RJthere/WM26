@@ -70,7 +70,8 @@
 <script>
 // Die Liste der Spiele. Hier kannst du das restliche Turnier nach demselben Muster ergänzen.
 // Zeiten sind im ISO-Format (+02:00 steht für unsere Sommerzeit in Österreich).
- const matches = [
+ 
+  const matches = [
   { time: "2026-07-02T21:00:00+02:00", match: "Spanien – Österreich", tv: "ServusTV", venue: "Los Angeles" },
   { time: "2026-07-03T01:00:00+02:00", match: "Portugal – Kroatien", tv: "ServusTV", venue: "Toronto" },
   { time: "2026-07-03T05:00:00+02:00", match: "Schweiz – Algerien", tv: "ServusTV", venue: "Vancouver" },
@@ -79,8 +80,6 @@
   { time: "2026-07-04T03:30:00+02:00", match: "Kolumbien – Ghana", tv: "ORF 1", venue: "Kansas City" }
 ];
 
-
- 
 function renderMatches() {
   const now = new Date();
   // Wir blenden Spiele 110 Minuten (1h 50m) nach Anpfiff aus
